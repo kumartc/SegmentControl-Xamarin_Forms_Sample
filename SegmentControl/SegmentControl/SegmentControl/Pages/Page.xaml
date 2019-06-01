@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:Segment="clr-namespace:SegmentControl.Controls"
+                 x:Class="SegmentControl.Pages.Page">
+    
+        
+        <StackLayout Padding="0,5">
+            
+                <Segment:SegmentControl SelectedItemChanged="SegmentControl_SelectedItemChanged"
+                                        x:Name="segment" 
+                                        AutoScroll="true"
+                                        TextColor="Black" 
+                                        SelectedTextColor="Navy"
+                                        SelectedLineColor="Navy"/>
+
+            <Image x:Name="ImageSource" HorizontalOptions="FillAndExpand"
+                       VerticalOptions="FillAndExpand"/>
+
+            <Label x:Name="LabelText" VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"/>
+
+
+
+
+        </StackLayout>
+    </ContentPage>
